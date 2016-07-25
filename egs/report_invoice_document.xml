@@ -73,7 +73,7 @@
                         <th>Description</th>
                         <th  class="text-right">Quantity</th>
                         <th>Unit</th>
-                        <th>Unit Price</th>
+                        <th style="text-align:center">Unit Price</th>
                         <th class="text-right" groups="sale.group_discount_per_so_line">Discount (%)</th>
                         <th class="text-right">Taxes</th>
                         <th class="text-right">Amount</th>
@@ -139,7 +139,7 @@
                         </thead>
                         <tbody>
                             <tr t-foreach="o.tax_line" t-as="t">
-                                <td><span t-field="t.name"/></td>
+                                <td><span t-field="t.code"/></td>
                                 <td class="text-right">
                                     <span t-field="t.base" t-field-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: &quot;o.currency_id&quot;}"/>
                                 </td>
